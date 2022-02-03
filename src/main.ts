@@ -11,6 +11,8 @@ Promise.all([
    loadRemoteEntry(
       { type: 'module', remoteEntry: 'http://bhn050103121:8051/poc-po-ui/remoteEntry.js' }
    )
+
+   
 ])
    .catch(err => console.error('Error loading remote entries', err))
    .then(() => import('./bootstrap'))
