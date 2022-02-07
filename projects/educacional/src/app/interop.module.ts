@@ -14,6 +14,7 @@ import { AlunoModule } from "./aluno/aluno.module";
 @NgModule({
   imports: [
     BrowserModule,
+    
     AlunoModule,
     ProfessorModule,
     PoTemplatesModule,
