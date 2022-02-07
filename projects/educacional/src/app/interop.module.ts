@@ -13,8 +13,7 @@ import { AlunoModule } from "./aluno/aluno.module";
 
 @NgModule({
   imports: [
-    BrowserModule,
-    
+    BrowserModule,    
     AlunoModule,
     ProfessorModule,
     PoTemplatesModule,
