@@ -13,7 +13,7 @@ import { AlunoModule } from "./aluno/aluno.module";
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule,    
     AlunoModule,
     ProfessorModule,
     PoTemplatesModule,
@@ -22,4 +22,6 @@ import { AlunoModule } from "./aluno/aluno.module";
     RouterModule.forChild(APP_ROUTES)
   ]
 })
+
+
 export class InteropModule { }
