@@ -22,6 +22,4 @@ import { AlunoModule } from "./aluno/aluno.module";
     RouterModule.forChild(APP_ROUTES)
   ]
 })
-
-
 export class InteropModule { }
