@@ -3,14 +3,14 @@ const mf = require("@angular-architects/module-federation/webpack");
 const path = require("path");
 const share = mf.share;
 
-var express = require('express')
-var cors = require('cors')
-var app = express()
- 
-app.use(cors())
-  
-const URLGlb = 'http://localhost:8051/globas/remoteEntry.js';
-const URLEdu = 'http://localhost:5013/remoteEntry.js';
+var express = require("express");
+var cors = require("cors");
+var app = express();
+
+app.use(cors());
+
+const URLGlb = "http://localhost:5001/remoteEntry.js";
+const URLEdu = "http://localhost:5002/remoteEntry.js";
 
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(path.join(__dirname, "tsconfig.json"), [
@@ -38,7 +38,7 @@ module.exports = {
       library: { type: "module" },
 
       // For hosts (please adjust)
-      remotes: {    
+      remotes: {
         mglb: URLGlb,
         medu: URLEdu,
       },
