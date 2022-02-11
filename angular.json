@@ -43,12 +43,12 @@
 			"architect": {
 				"build": {
 					"builder": "ngx-build-plus:browser",
-					"options": {						
-						"outputPath": "C:\\RM\\Atual\\Release\\Bin\\wwwroot\\multirepo",
+					"options": {
+						"outputPath": "dist/multirepo",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
-						"tsConfig": "tsconfig.app.json",						
+						"tsConfig": "tsconfig.app.json",
 						"assets": [
 							"src/favicon.ico",
 							"src/assets"
